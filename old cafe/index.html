@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Артём Алакин — веб-разработчик</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header__inner">
+            <a href="#top" class="logo">
+                <span class="logo__paw">🐾</span>
+                Артём Алакин
+            </a>
+            <nav class="nav">
+                <a href="#advantages">Преимущества</a>
+                <a href="#skills">Навыки</a>
+                <a href="#projects">Проекты</a>
+                <a href="#contact" class="nav__cta">Связаться</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+        <div class="container hero__inner">
+            <div class="hero__content">
+                <div class="hero__badge">
+                    <span class="hero__badge-dot"></span>
+                    Открыт для новых проектов
+                </div>
+
+                <h1 class="hero__title">
+                    Привет! Я&nbsp;Артём —<br>
+                    веб-разработчик,<br>
+                    который любит <span class="accent">чистый код</span>
+                </h1>
+
+                <p class="hero__subtitle">
+                    Закончил техникум по&nbsp;специальности «Программист». 
+                    Дипломную работу защитил на&nbsp;отлично — сдавал 
+                    собственный сайт. Уже готов делать проекты для&nbsp;клиентов.
+                </p>
+
+                <div class="hero__actions">
+                    <a href="#projects" class="btn btn--primary">
+                        Смотреть проекты
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn--ghost">Написать мне</a>
+                </div>
+
+                <div class="hero__stats">
+                    <div class="stat">
+                        <div class="stat__value">5</div>
+                        <div class="stat__label">за диплом</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__value">1</div>
+                        <div class="stat__label">готовый сайт</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__value">∞</div>
+                        <div class="stat__label">желания делать</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__visual">
+                <model-viewer 
+                    id="petViewer"
+                    src="chill_doge_-_doge_jones_industrial.glb" 
+                    alt="3D модель собаки"
+                    disable-zoom
+                    disable-pan
+                    disable-tap
+                    interaction-prompt="none"
+                    shadow-intensity="1"
+                    exposure="1.1"
+                    environment-image="neutral"
+                    camera-orbit="-16.55deg 86.66deg 4.342m"
+                    field-of-view="30deg"
+                ></model-viewer>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section class="section" id="advantages">
+        <div class="container">
+            <div class="section__head">
+                <span class="section__tag">01 — Преимущества</span>
+                <h2 class="section__title">Почему стоит работать со мной</h2>
+                <p class="section__desc">
+                    6 причин, по которым я буду полезен вашему проекту
+                </p>
+            </div>
+
+            <div class="advantages">
+                <div class="advantage">
+                    <div class="advantage__num">01</div>
+                    <div class="advantage__icon">🎓</div>
+                    <h3 class="advantage__title">Профильное образование</h3>
+                    <p class="advantage__desc">
+                        Закончил техникум по специальности «Программист». 
+                        Дипломная работа — собственный сайт, защитил на отлично.
+                    </p>
+                </div>
+
+                <div class="advantage">
+                    <div class="advantage__num">02</div>
+                    <div class="advantage__icon">💻</div>
+                    <h3 class="advantage__title">Реальный опыт</h3>
+                    <p class="advantage__desc">
+                        Есть готовый сайт, который я разработал с нуля: 
+                        продумал структуру, сверстал, написал логику.
+                    </p>
+                </div>
+
+                <div class="advantage">
+                    <div class="advantage__num">03</div>
+                    <div class="advantage__icon">⚡</div>
+                    <h3 class="advantage__title">Быстрый старт</h3>
+                    <p class="advantage__desc">
+                        Не нужно долго вводить в курс дела — базовые технологии 
+                        знаю уверенно, приступаю к работе сразу.
+                    </p>
+                </div>
+
+                <div class="advantage">
+                    <div class="advantage__num">04</div>
+                    <div class="advantage__icon">🎯</div>
+                    <h3 class="advantage__title">Внимание к деталям</h3>
+                    <p class="advantage__desc">
+                        Пишу аккуратный и понятный код. Слежу за адаптивом, 
+                        анимациями и тем, чтобы всё работало без багов.
+                    </p>
+                </div>
+
+                <div class="advantage">
+                    <div class="advantage__num">05</div>
+                    <div class="advantage__icon">💬</div>
+                    <h3 class="advantage__title">На связи</h3>
+                    <p class="advantage__desc">
+                        Отвечаю быстро, объясняю понятно, показываю 
+                        промежуточные результаты. Без сюрпризов в конце.
+                    </p>
+                </div>
+
+                <div class="advantage">
+                    <div class="advantage__num">06</div>
+                    <div class="advantage__icon">🚀</div>
+                    <h3 class="advantage__title">Мотивация</h3>
+                    <p class="advantage__desc">
+                        Мне важно расти и делать крутые проекты. 
+                        Каждый заказ — это шанс показать, на что я способен.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--gray" id="skills">
+        <div class="container">
+            <div class="section__head">
+                <span class="section__tag">02 — Навыки</span>
+                <h2 class="section__title">Стек, в котором работаю</h2>
+            </div>
+
+            <div class="skills">
+                <div class="skill-group">
+                    <div class="skill-group__title">Frontend</div>
+                    <div class="skill-group__list">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Адаптивная вёрстка</span>
+                        <span>Flexbox &amp; Grid</span>
+                        <span>Анимации</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group__title">Инструменты</div>
+                    <div class="skill-group__list">
+                        <span>Git &amp; GitHub</span>
+                        <span>VS Code</span>
+                        <span>Figma</span>
+                        <span>Chrome DevTools</span>
+                        <span>Live Server</span>
+                        <span>NPM</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <div class="skill-group__title">Изучаю сейчас</div>
+                    <div class="skill-group__list">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Node.js</span>
+                        <span>Bootstrap</span>
+                        <span>MySQL</span>
+                        <span>REST API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section__head">
+                <span class="section__tag">03 — Проекты</span>
+                <h2 class="section__title">Работы, которыми горжусь</h2>
+                <p class="section__desc">
+                    Нажмите на карточку — внутри можно потыкать и посмотреть, как это работает
+                </p>
+            </div>
+
+            <div class="projects">
+
+                <!-- === Проект 1: Дипломный сайт === -->
+                <article class="project project--interactive" data-demo="shop">
+                    <div class="project__window">
+                        <div class="project__window-bar">
+                            <span class="project__window-dot"></span>
+                            <span class="project__window-dot"></span>
+                            <span class="project__window-dot"></span>
+                            <span class="project__window-url">diploma-site.ru</span>
+                        </div>
+
+                        <div class="demo demo--shop">
+                            <div class="demo-shop">
+                                <div class="demo-shop__header">
+                                    <span class="demo-shop__title">Каталог</span>
+                                    <span class="demo-shop__cart">
+                                        🛒 <span data-cart-count>0</span>
+                                    </span>
+                                </div>
+                                <div class="demo-shop__grid">
+                                    <div class="demo-shop__item" data-price="12500">
+                                        <div class="demo-shop__img" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe);">🛋</div>
+                                        <div class="demo-shop__name">Диван</div>
+                                        <div class="demo-shop__price">12 500 ₽</div>
+                                    </div>
+                                    <div class="demo-shop__item" data-price="8400">
+                                        <div class="demo-shop__img" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe);">🪑</div>
+                                        <div class="demo-shop__name">Стул</div>
+                                        <div class="demo-shop__price">8 400 ₽</div>
+                                    </div>
+                                    <div class="demo-shop__item" data-price="5200">
+                                        <div class="demo-shop__img" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);">💡</div>
+                                        <div class="demo-shop__name">Лампа</div>
+                                        <div class="demo-shop__price">5 200 ₽</div>
+                                    </div>
+                                    <div class="demo-shop__item" data-price="3200">
+                                        <div class="demo-shop__img" style="background:linear-gradient(135deg,#ffedd5,#fed7aa);">🖼</div>
+                                        <div class="demo-shop__name">Постер</div>
+                                        <div class="demo-shop__price">3 200 ₽</div>
+                                    </div>
+                                    <div class="demo-shop__item" data-price="9800">
+                                        <div class="demo-shop__img" style="background:linear-gradient(135deg,#fce7f3,#fbcfe8);">🪞</div>
+                                        <div class="demo-shop__name">Зеркало</div>
+                                        <div class="demo-shop__price">9 800 ₽</div>
+                                    </div>
+                                    <div class="demo-shop__item" data-price="2400">
+                                        <div class="demo-shop__img" style="background:linear-gradient(135deg,#fef3c7,#fde68a);">🌿</div>
+                                        <div class="demo-shop__name">Растение</div>
+                                        <div class="demo-shop__price">2 400 ₽</div>
+                                    </div>
+                                </div>
+                                <div class="demo-shop__total">
+                                    В корзине: <strong data-cart-total>0 ₽</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project__window-hint">
+                            <span>Кликните на товар 👆</span>
+                        </div>
+                    </div>
+
+                    <div class="project__info">
+                        <div class="project__tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <h3 class="project__title">Дипломный сайт — оценка 5</h3>
+                        <p class="project__desc">
+                            Мой первый крупный проект: собственный сайт с нуля. 
+                            Продумал структуру, сверстал, написал логику. 
+                            Защитил на отлично.
+                        </p>
+                        <div class="project__footer">
+                            <div class="project__result">
+                                <span class="project__result-value">5/5</span>
+                                <span class="project__result-label">за защиту</span>
+                            </div>
+                            <a href="#" class="project__link" onclick="event.preventDefault();">
+                                Подробнее →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- === Проект 2: Адаптивный лендинг === -->
+                <article class="project project--interactive" data-demo="dashboard">
+                    <div class="project__window">
+                        <div class="project__window-bar">
+                            <span class="project__window-dot"></span>
+                            <span class="project__window-dot"></span>
+                            <span class="project__window-dot"></span>
+                            <span class="project__window-url">landing-page.ru</span>
+                        </div>
+
+                        <div class="demo demo--dashboard">
+                            <div class="demo-dash">
+                                <div class="demo-dash__metrics">
+                                    <div class="demo-dash__metric">
+                                        <div class="demo-dash__metric-label">Скорость</div>
+                                        <div class="demo-dash__metric-value" data-metric="revenue">98/100</div>
+                                    </div>
+                                    <div class="demo-dash__metric">
+                                        <div class="demo-dash__metric-label">Блоков</div>
+                                        <div class="demo-dash__metric-value" data-metric="orders">12</div>
+                                    </div>
+                                    <div class="demo-dash__metric">
+                                        <div class="demo-dash__metric-label">Экранов</div>
+                                        <div class="demo-dash__metric-value" data-metric="conv">4</div>
+                                    </div>
+                                </div>
+
+                                <div class="demo-dash__chart">
+                                    <svg viewBox="0 0 300 100" preserveAspectRatio="none" data-chart>
+                                        <polyline
+                                            fill="none"
+                                            stroke="var(--accent)"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            points="0,80 30,65 60,70 90,50 120,55 150,40 180,45 210,30 240,35 270,25 300,30"
+                                        />
+                                    </svg>
+                                </div>
+
+                                <div class="demo-dash__tabs">
+                                    <button class="demo-dash__tab" data-period="7d">Телефон</button>
+                                    <button class="demo-dash__tab is-active" data-period="30d">Планшет</button>
+                                    <button class="demo-dash__tab" data-period="year">Десктоп</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project__window-hint">
+                            <span>Переключите устройство 📱</span>
+                        </div>
+                    </div>
+
+                    <div class="project__info">
+                        <div class="project__tags">
+                            <span>HTML</span><span>CSS</span><span>Flexbox</span><span>Grid</span>
+                        </div>
+                        <h3 class="project__title">Адаптивный лендинг</h3>
+                        <p class="project__desc">
+                            Лендинг, который корректно выглядит на&nbsp;телефоне, 
+                            планшете и&nbsp;десктопе. Чистая семантичная вёрстка, 
+                            плавные анимации.
+                        </p>
+                        <div class="project__footer">
+                            <div class="project__result">
+                                <span class="project__result-value">100%</span>
+                                <span class="project__result-label">адаптив</span>
+                            </div>
+                            <a href="#" class="project__link" onclick="event.preventDefault();">
+                                Подробнее →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- === Проект 3: Мини-чат === -->
+                <article class="project project--interactive" data-demo="chat">
+                    <div class="project__window">
+                        <div class="project__window-bar">
+                            <span class="project__window-dot"></span>
+                            <span class="project__window-dot"></span>
+                            <span class="project__window-dot"></span>
+                            <span class="project__window-url">mini-chat.app</span>
+                        </div>
+
+                        <div class="demo demo--chat">
+                            <div class="demo-chat">
+                                <div class="demo-chat__messages" data-chat-messages>
+                                    <div class="demo-chat__msg demo-chat__msg--bot">
+                                        <span class="demo-chat__avatar">🤖</span>
+                                        <div class="demo-chat__bubble">Привет! Я бот Артёма. Напиши что-нибудь 👋</div>
+                                    </div>
+                                </div>
+
+                                <form class="demo-chat__form" data-chat-form>
+                                    <input 
+                                        type="text" 
+                                        class="demo-chat__input" 
+                                        placeholder="Напишите сообщение..." 
+                                        data-chat-input
+                                        maxlength="80"
+                                    >
+                                    <button type="submit" class="demo-chat__send" aria-label="Отправить">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M2 8L14 2L10 14L7 9L2 8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="project__window-hint">
+                            <span>Напишите боту 💬</span>
+                        </div>
+                    </div>
+
+                    <div class="project__info">
+                        <div class="project__tags">
+                            <span>JavaScript</span><span>DOM</span><span>Events</span>
+                        </div>
+                        <h3 class="project__title">Мини-чат на JavaScript</h3>
+                        <p class="project__desc">
+                            Учебный проект: интерактивный чат с&nbsp;ботом 
+                            на&nbsp;чистом JavaScript. Работа с&nbsp;DOM, 
+                            обработка событий, анимации.
+                        </p>
+                        <div class="project__footer">
+                            <div class="project__result">
+                                <span class="project__result-value">0 kB</span>
+                                <span class="project__result-label">зависимостей</span>
+                            </div>
+                            <a href="#" class="project__link" onclick="event.preventDefault();">
+                                Подробнее →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- === Проект 4: Сайт-визитка === -->
+                <article class="project project--interactive" data-demo="course">
+                    <div class="project__window">
+                        <div class="project__window-bar">
+                            <span class="project__window-dot"></span>
+                            <span class="project__window-dot"></span>
+                            <span class="project__window-dot"></span>
+                            <span class="project__window-url">artem-alakin.ru</span>
+                        </div>
+
+                        <div class="demo demo--course">
+                            <div class="demo-course">
+                                <div class="demo-course__header">
+                                    <span class="demo-course__label">Сайт-визитка · прогресс</span>
+                                    <span class="demo-course__progress-text" data-course-text>0%</span>
+                                </div>
+                                <div class="demo-course__bar">
+                                    <div class="demo-course__bar-fill" data-course-bar style="width: 0%"></div>
+                                </div>
+                                <div class="demo-course__lessons" data-course-lessons>
+                                    <div class="demo-course__lesson is-active">Дизайн · концепция</div>
+                                    <div class="demo-course__lesson">Вёрстка · HTML/CSS</div>
+                                    <div class="demo-course__lesson">Логика · JavaScript</div>
+                                    <div class="demo-course__lesson">Публикация · хостинг</div>
+                                </div>
+                                <button class="demo-course__btn" data-course-btn>
+                                    Следующий этап →
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="project__window-hint">
+                            <span>Нажмите "Следующий" 🎨</span>
+                        </div>
+                    </div>
+
+                    <div class="project__info">
+                        <div class="project__tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <h3 class="project__title">Сайт-визитка (этот сайт)</h3>
+                        <p class="project__desc">
+                            Персональная страница, которую вы сейчас смотрите. 
+                            Сделал сам: сверстал, добавил 3D-модели 
+                            и&nbsp;интерактивные демо.
+                        </p>
+                        <div class="project__footer">
+                            <div class="project__result">
+                                <span class="project__result-value">2026</span>
+                                <span class="project__result-label">год выпуска</span>
+                            </div>
+                            <a href="#" class="project__link" onclick="event.preventDefault();">
+                                Подробнее →
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--gray" id="contact">
+        <div class="container">
+            <div class="contact">
+                <div class="contact__info">
+                    <span class="section__tag">04 — Контакты</span>
+                    <h2 class="section__title">
+                        Есть задача?<br>
+                        Давайте обсудим
+                    </h2>
+                    <p class="contact__lead">
+                        Отвечу в течение дня. Расскажите о&nbsp;проекте — 
+                        предложу решение и&nbsp;сроки. Готов взяться 
+                        за&nbsp;интересную задачу.
+                    </p>
+
+                    <div class="contact__links">
+                        <a href="mailto:artem@alakin.ru" class="contact__link">
+                            <span class="contact__link-icon">✉</span>
+                            <span>
+                                <span class="contact__link-label">Email</span>
+                                artem@alakin.ru
+                            </span>
+                        </a>
+                        <a href="#" class="contact__link">
+                            <span class="contact__link-icon">✈</span>
+                            <span>
+                                <span class="contact__link-label">Telegram</span>
+                                @artem_alakin
+                            </span>
+                        </a>
+                        <a href="#" class="contact__link">
+                            <span class="contact__link-icon">◆</span>
+                            <span>
+                                <span class="contact__link-label">GitHub</span>
+                                github.com/artem-alakin
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact__form" id="contactForm">
+                    <div class="field">
+                        <label>Ваше имя</label>
+                        <input type="text" name="name" placeholder="Анна" required>
+                    </div>
+                    <div class="field">
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="anna@company.ru" required>
+                    </div>
+                    <div class="field">
+                        <label>О проекте</label>
+                        <textarea name="message" rows="4" placeholder="Опишите задачу в двух-трёх предложениях" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">
+                        Отправить
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <span class="logo__paw">🐾</span> Артём Алакин
+            </div>
+            <div class="footer__text">© 2026 · Веб-разработчик</div>
+            <div class="footer__text">Сделано вручную</div>
+        </div>
+    </footer>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
